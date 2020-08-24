@@ -17,7 +17,7 @@ public class DFSRecursive {
 		}
 	}
 	
-	void dfsVisit(GraphNode node) {
+	void dfsVisit(GraphNode node){
 		node.setVisited(true);
 		System.out.print(node.getName()+node.getIndex()+" ");
 		
