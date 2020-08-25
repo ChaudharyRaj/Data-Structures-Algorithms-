@@ -12,9 +12,10 @@ public class WeightedNode implements Comparable<WeightedNode>{
 	
 	public WeightedNode(String name){
 		this.name = name;
+		distance = Integer.MAX_VALUE;
 	}
 	
-	public String getName() {
+	public String getName(){
 		return name;
 	}
 	
@@ -58,7 +59,7 @@ public class WeightedNode implements Comparable<WeightedNode>{
 		return distance;
 	}
 	
-	public void setDistance(int distance) {
+	public void setDistance(int distance){
 		this.distance = distance;
 	}
 	
@@ -67,7 +68,7 @@ public class WeightedNode implements Comparable<WeightedNode>{
 		return name;
 	}
 	@Override
-	public int compareTo(WeightedNode o) {
+	public int compareTo(WeightedNode o){
 		return this.distance - o.distance;
 	}
 }

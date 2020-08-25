@@ -48,6 +48,9 @@ public class GraphNode {
 	public GraphNode getParent(){
 		return parent;
 	}
+	public void setParent(GraphNode parent) {
+		this.parent =  parent;
+	}
 	
 	public GraphNode(String name){
 		this.name = name;
