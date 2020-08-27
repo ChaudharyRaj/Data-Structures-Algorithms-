@@ -1,6 +1,6 @@
 package node;
 import java.util.*;
-
+import mst.*;
 public class WeightedNode implements Comparable<WeightedNode>{
 	public String name;
 	
@@ -9,10 +9,17 @@ public class WeightedNode implements Comparable<WeightedNode>{
 	private boolean isVisited = false;
 	private WeightedNode parent;
 	private int distance;
-	
+	private DisjointSet set;
 	public WeightedNode(String name){
 		this.name = name;
 		distance = Integer.MAX_VALUE;
+	}
+	
+	public DisjointSet getSet() {
+		return set;
+	}
+	public void setSet(DisjointSet set) {
+		this.set = set;
 	}
 	
 	public String getName(){
